@@ -1,11 +1,52 @@
 file_type: csv
 dataset_name: testfile
-file_name: test_data
+file_name: Parking_Violations_Issued_-_Fiscal_Year_2017
 table_name: edsurv
 inbound_delimiter: ","
 outbound_delimiter: "|"
 skip_leading_rows: 1
 columns: 
-    - city
-    - price
-    - distance
+     - Summons Number 
+     - Plate ID 
+     - Registration State 
+     - Plate Type
+     - Issue Date 
+     - Violation Code 
+     - Vehicle Body Type 
+     - Vehicle Make
+     - Issuing Agency 
+     - Street Code1 
+     - Street Code2 
+     - Street Code3
+     - Vehicle Expiration Date
+     - Violation Location 
+     - Violation Precinct
+     - Issuer Precinct
+     - Issuer Code 
+     - Issuer Command 
+     - Issuer Squad
+     - Violation Time
+     - Time First Observed 
+     - Violation County
+     - Violation In Front Of Or Opposite
+     - House Number
+     - Street Name
+     - Intersecting Street 
+     - Date First Observed
+     - Law Section
+     - Sub Division 
+     - Violation Legal Code 
+     - Days Parking In Effect
+     - From Hours In Effect 
+     - To Hours In Effect 
+     - Vehicle Color
+     - Unregistered Vehicle?
+     - Vehicle Year 
+     - Meter Number
+     - Feet From Curb 
+     - Violation Post Code 
+     - Violation Description
+     - No Standing or Stopping 
+     - Violation 
+     - Hydrant Violation
+     - Double Parking Violation

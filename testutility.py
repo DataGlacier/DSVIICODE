@@ -6,7 +6,10 @@ import pandas as pd
 import datetime 
 import gc
 import re
-
+import time
+import dask.dataframe as dd
+import modin.pandas as md
+import ray
 
 ################
 # File Reading #
@@ -30,6 +33,7 @@ def col_header_val(df,table_config):
     replace whitespaces in the column
     and standardized column names
     '''
+    df.columns = [column.strip() for column in df.columns]
     df.columns = df.columns.str.lower()
     df.columns = df.columns.str.replace('[^\w]','_',regex=True)
     df.columns = list(map(lambda x: x.strip('_'), list(df.columns)))
